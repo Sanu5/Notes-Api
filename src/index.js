@@ -4,13 +4,13 @@ const noteRouter = require("./noteRoutes");
 const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const corse = require("cors");
+const cors = require("cors");
 
 dotenv.config();
 
 app.use(express.json());
 
-app.use(corse());
+app.use(cors());
 
 
 app.use("/users", userRouter)
